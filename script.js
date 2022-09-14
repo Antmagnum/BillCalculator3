@@ -44,15 +44,21 @@ btn2.addEventListener('click', function () {
 let btn2Custom = document.getElementById('btn2Custom');
 
 btn2Custom.addEventListener('click', function () {
-    let bill = document.getElementById('billAmount').value;
-    let peopleAmount = document.getElementById('peopleAmount').value;
-    let tipPercentage = document.getElementById('customTip').value;
-    let tipAmount = (bill * tipPercentage) / 100;
 
-    document.getElementById('customTip').value = tipPercentage;
-    document.getElementById('tipAmount').value = Math.ceil(tipAmount);
-    document.getElementById('totalBill').value = Math.ceil((parseFloat(bill) + parseFloat(tipAmount)) / parseFloat(peopleAmount));
-    document.getElementById('totalBillRoundCustom').value = Math.ceil(((parseFloat(bill) + parseFloat(tipAmount)) / parseFloat(peopleAmount)) / 10) * 10;
+    if (bill != 0) {
+        let bill = document.getElementById('billAmount').value;
+        let peopleAmount = document.getElementById('peopleAmount').value;
+        let tipPercentage = document.getElementById('customTip').value;
+        let tipAmount = (bill * tipPercentage) / 100;
+
+        document.getElementById('customTip').value = tipPercentage;
+        document.getElementById('tipAmount').value = Math.ceil(tipAmount);
+        document.getElementById('totalBill').value = Math.ceil((parseFloat(bill) + parseFloat(tipAmount)) / parseFloat(peopleAmount));
+        document.getElementById('totalBillRoundCustom').value = Math.ceil(((parseFloat(bill) + parseFloat(tipAmount)) / parseFloat(peopleAmount)) / 10) * 10;
+    } else {
+
+
+    }
 })
 
 

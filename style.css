@@ -1,6 +1,13 @@
+@font-face {
+  font-family: Flamenco;
+  src: url(Flamenco-Regular.ttf);
+}
+
 body {
   background-image: url("background.jpg");
   background-size: 100%;
+  overflow: hidden;
+  font-family: Flamenco;
 }
 
 input::-webkit-outer-spin-button,
@@ -31,7 +38,7 @@ textarea {
 
 .container {
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2%;
   min-width: 300px;
   max-width: 400px;
   height: 100%;
@@ -43,6 +50,13 @@ textarea {
   color: white;
   font-weight: bold;
   border-radius: 5px;
+  padding: 7px;
+
+}
+
+p {
+  margin-bottom: 2px;
+  font-size: 1.4rem;
 }
 
 .row {
@@ -51,12 +65,15 @@ textarea {
   text-align: center;
   font-size: 1.45rem;
   margin-bottom: .5rem;
+  border-radius: 5px;
 }
 
 input {
   font-size: 1.45rem;
   width: 50%;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2px;
 }
 
 input:focus {
@@ -70,8 +87,9 @@ input:focus {
 }
 
 .bill {
+  margin-top: 1.7rem;
   background-color: rgb(20, 20, 20, .7);
-
+  color: rgba(255, 255, 255, 0.5);
 }
 
 button {
@@ -86,14 +104,15 @@ button {
   background-color: crimson;
   border: none;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
 button:hover {
   box-shadow: 0 0 50px rgb(238, 86, 81);
   /* border: 1px solid rgba(238, 86, 81, 1); */
-  font-size: 1.6rem;
+  background-color: green;
+  cursor: pointer;
 }
 
 button:focus {
@@ -120,7 +139,7 @@ button:focus {
 }
 
 #btn2 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   color: black;
   margin-top: 0.5rem;
 }
@@ -140,4 +159,17 @@ button:focus {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
+}
+
+#reset:hover {
+  color: black;
+  transition: 1s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+  background-color: rgb(129, 12, 36);
+  cursor: pointer;
+}
+
+#reset:hover .container {
+  background-color: rgba(0, 0, 0, 1);
+  transition: 1s;
 }
