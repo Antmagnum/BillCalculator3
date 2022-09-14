@@ -1,0 +1,143 @@
+body {
+  background-image: url("background.jpg");
+  background-size: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=text],
+textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 5%;
+  min-width: 300px;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(50, 50, 50, .7);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.45rem;
+  margin-bottom: .5rem;
+}
+
+input {
+  font-size: 1.45rem;
+  width: 50%;
+  text-align: center;
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgb(99, 238, 81);
+  border: 1px solid rgba(99, 238, 81, 1);
+}
+
+.inputDark {
+  background-color: rgb(20, 20, 20, .7);
+  color: white;
+}
+
+.bill {
+  background-color: rgb(20, 20, 20, .7);
+
+}
+
+button {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  font-size: 1.5rem;
+  color: white;
+  background-color: crimson;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  box-shadow: 0 0 50px rgb(238, 86, 81);
+  /* border: 1px solid rgba(238, 86, 81, 1); */
+  font-size: 1.6rem;
+}
+
+button:focus {
+  background-color: green;
+  box-shadow: 0 0 50px green;
+}
+
+
+/* Custom area */
+
+#customTip {
+  display: none;
+  /* border: 2px solid red; */
+  box-shadow: 0 0 50px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#btn2Custom {
+  display: none;
+}
+
+#totalBillRoundCustom {
+  display: none;
+}
+
+#btn2 {
+  font-size: 1.75rem;
+  color: black;
+  margin-top: 0.5rem;
+}
+
+#reset:focus,
+#reset {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+  font-size: 1.5rem;
+  color: white;
+  background-color: crimson;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}

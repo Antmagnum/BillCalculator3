@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tip calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p>Bill Amount</p><input id="billAmount" type="text">
+        </div>
+        <div class="row">
+            <p>People</p><input id="peopleAmount" type="text">
+        </div>
+
+        <div class="row">
+            <p>Tip %</p>
+            <input id="customTip" type="text">
+            <input class="inputDark" id="tipPercent" type="text">
+        </div>
+
+        <div class="row">
+            <p>Tip Amount</p>
+            <input class="inputDark" id="tipAmount" type="text">
+        </div>
+        <div class="row">
+            <p>Total:</p>
+            <input id="totalBill" type="text">
+        </div>
+
+        <div class="row">
+            <button id="btn1">Calculate</button>
+            <button id="btn2Custom">Calculate</button>
+        </div>
+        <div class="row bill">
+            <p>(Optional) Rounded Total</p>
+            <input id="totalBillRoundCustom" type="text">
+            <input id="totalBillRound" type="text">
+        </div>
+
+
+
+        <div><button id="btn2">Custom Tip</button></div>
+        <div><button id="reset">Reset</button></div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+
+</html>
